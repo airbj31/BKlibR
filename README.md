@@ -13,9 +13,25 @@ last update : July 21, 2021
 * Package Dependencies
   - [tidyverse](https://github.com/tidyverse)
 
+## Installation
+
+```r
+  # Install the the development version from GitHub:
+  # install.packages("devtools")
+  devtools::install_github("airbj31/BKlibR")
+```
+
 ## Brief usages
 
 ### FILE I/O related
+
+* read12toAdd
+
+* readAD
+
+* readIllumina (Under-development)
+
+
 
 ### Distance matrix related
 
@@ -25,3 +41,11 @@ last update : July 21, 2021
 ```r
 shuf.dist(x,seed)
 ```
+
+### Variant Calling from alignment (under development)
+
+* currently, mafft is used for alignment.
+
+###
+
+
