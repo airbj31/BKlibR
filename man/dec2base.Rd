@@ -20,5 +20,5 @@ convert Decimal numners to each of base 'n' system.
 dec2base(1:10,3,T)
 }
 \author{
-Byungju Kim
+Byungju Kim (bjk@inu.ac.kr)
 }

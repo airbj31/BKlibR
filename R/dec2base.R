@@ -6,6 +6,7 @@
 #' @param format a logical value (T/F) which formating leading zero based on most long number.
 #' @examples
 #' dec2base(1:10,3,T)
+#' @export
 dec2base <-function(x,base,format=T) {
   Q<-as.numeric(x)
   n<-0
