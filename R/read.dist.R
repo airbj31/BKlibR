@@ -1,9 +1,11 @@
 #' read.dist: read Phylip style distance matrix as distance matrix in R
 #'
+#' @name read.dist
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param file a file name,
 #' @param rm.list list for sample exclusion.
 #' @param skip a numeric valueof line skipping.
+#' @export
 #' @examples
 #'  read.dist(matrix.tsv)
 
