@@ -11,7 +11,6 @@
 
 read.phylip_dist <- function(file,rm.list=c())
 {
-  library(tidyverse)
   nskip=skip
   ncol<-as.numeric(readLines(file,n=1))
   tmat<-read_table2(file,col_names=paste0("V",seq(1,ncol+1,by=1)),skip=nskip)
@@ -27,7 +26,6 @@ read.phylip_dist <- function(file,rm.list=c())
 
 write.phylip_dist <-function(file,rm.list=c())
 {
-  library(tidyverse)
 
 
 

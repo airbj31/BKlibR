@@ -44,12 +44,12 @@ read12toAdd <- function(ped,map,onehot=F)
   return(df1)
 }
 
-readAD <-function(ped,map,onehot=F)
-{
-  tmp.ped<-read.table(ped,header=F,colClasses=c("character"))
-  tmp.map<-read.table(map,header=F)[,2]
-  tmp.map<-as.character(tmp.map)
-  sample<-tmp.ped$V2
-  df1<-tmp.ped[,7:dim(tmp.ped)[2]]
-  df1<-as.matrix(df1)
-}
+## readAD <-function(ped,map,onehot=F)
+## {
+##  tmp.ped<-read.table(ped,header=F,colClasses=c("character"))
+##  tmp.map<-read.table(map,header=F)[,2]
+##  tmp.map<-as.character(tmp.map)
+##  sample<-tmp.ped$V2
+##  df1<-tmp.ped[,7:dim(tmp.ped)[2]]
+##  df1<-as.matrix(df1)
+##}
