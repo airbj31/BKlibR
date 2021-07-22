@@ -12,7 +12,7 @@ shuf.dist(x, seed = 716018)
 \item{seed}{seed used to generate random sampling order.}
 }
 \description{
-Random shuffling of distance matrix.
+shuffle distance matrix randomly using a given seed
 }
 \examples{
 shuf.dist(x,seed=1234)

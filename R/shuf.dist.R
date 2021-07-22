@@ -1,5 +1,7 @@
 #' Random shuffling of distance matrix.
 #'
+#' shuffle distance matrix randomly using a given seed
+#'
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param x a dist object.
 #' @param seed seed used to generate random sampling order.
