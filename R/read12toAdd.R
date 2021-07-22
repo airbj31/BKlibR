@@ -4,6 +4,7 @@
 #' @param ped a 1/2 coded plnk pedigree file (+7 metadata column)
 #' @param map plink genomic map file which describe genomic coordinate and unique SNP IDs.
 #' @param onehot choice of one-hot encoding or additive model.
+#' @export
 #' @examples
 #' read12toAdd(ped,map)
 #'
@@ -43,13 +44,3 @@ read12toAdd <- function(ped,map,onehot=F)
 
   return(df1)
 }
-
-## readAD <-function(ped,map,onehot=F)
-## {
-##  tmp.ped<-read.table(ped,header=F,colClasses=c("character"))
-##  tmp.map<-read.table(map,header=F)[,2]
-##  tmp.map<-as.character(tmp.map)
-##  sample<-tmp.ped$V2
-##  df1<-tmp.ped[,7:dim(tmp.ped)[2]]
-##  df1<-as.matrix(df1)
-##}
