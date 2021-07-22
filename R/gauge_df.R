@@ -1,7 +1,7 @@
 #` simple Exploratory data analysis on data matrix
 #'
 #' show df's mossing ratio, number of variables and column types..
-#'
+#' @name gauge
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param x a data.frame or tibble object.
 #' @param desc column description file (under-development)

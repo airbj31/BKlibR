@@ -2,6 +2,6 @@
 
 export(BKtbl)
 export(dec2base)
-export(gauge_df)
+export(gauge)
 export(shuf.dist)
 import(tidyverse)
