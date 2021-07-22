@@ -5,6 +5,7 @@
 #' @param map plink genomic map file which describe genomic coordinate and unique SNP IDs.
 #' @param onehot choice of one-hot encoding or additive model.
 #' @examples
+#' @export
 #' read12toAdd(ped,map)
 #'
 read12toAdd <- function(ped,map,onehot=F)
