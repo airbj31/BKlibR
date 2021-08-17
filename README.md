@@ -34,7 +34,7 @@ last update : July 21, 2021
 
 ### Exploratory DATA analysis.
 
-* gauge_df 
+* describe_df 
   simple exploratory data ananysis on the given data.
   when the available 
   ```r

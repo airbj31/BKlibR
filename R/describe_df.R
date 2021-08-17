@@ -1,6 +1,6 @@
 #` simple Exploratory data analysis on data matrix
 #'
-#' show df's mossing ratio, number of variables and column types..
+#' show df's missing ratio, number of variables and column types..
 #' @name describe_df
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param x a data.frame or tibble object.
