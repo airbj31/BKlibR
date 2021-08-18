@@ -6,6 +6,7 @@
 #' @param onehot choice of one-hot encoding or additive model.
 #' @export
 #' @examples
+#' @export
 #' read12toAdd(ped,map)
 #'
 read12toAdd <- function(ped,map,onehot=F)
