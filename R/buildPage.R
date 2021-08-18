@@ -1,15 +1,17 @@
 #' Page builder for Shiny App with Appsilon's Shiny fluent.
 #'
-#'
+#' shamlessly stolen from Appsilon's tutorial.
 #' @name buildPage
 #' @author Byungju Kim (bjk@inu.ac.kr)
-#' @param x version
-#' @param y subversion
-#' @param URL various ~~~~.
+#' @param title title of the page
+#' @param subtitle subtitle of the page
+#' @param contents various html codes required to build page.
 #' @import tidyverse
 #' @import shiny
+#' @import shiny.fluent
+#' @import shiny.react
 #' @examples
-#' describe_df(billboard)
+#' buildPage()
 #' @export
 buildPage <- function (title, subtitle, contents) {
   tagList(div(

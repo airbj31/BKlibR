@@ -1,0 +1,18 @@
+citHeader("To cite BKlibR in publications use:")
+
+citEntry(entry = "Unkown",
+  title        = "BJK's personal R library",
+  author       = personList(as.person("Byungju Kim"))
+  journal      = "",
+  year         = "",
+  volume       = "",
+  number       = "",
+  pages        = "",
+  url          = "https://www.github.com/airbj31/BKlibR/",
+
+  textVersion  =
+  paste("Garrett Grolemund, Hadley Wickham (2011).",
+        "Dates and Times Made Easy with lubridate.",
+        "Journal of Statistical Software, 40(3), 1-25.",
+        "URL https://www.jstatsoft.org/v40/i03/.")
+)

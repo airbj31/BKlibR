@@ -23,6 +23,15 @@ last update : July 21, 2021
 
 ## Function developed
 
+### Library install/load
+
+* qlib : load multiple library quietly if the lib not exists, it tried to install that library from cran.
+
+*
+
+*
+
+
 ### FILE I/O 
 
 * read12toAdd
@@ -38,7 +47,7 @@ last update : July 21, 2021
   simple exploratory data ananysis on the given data.
   when the available 
   ```r
-  gauge_df(starwars,show_freq=T)
+  describe_df(starwars,show_freq=T)
   ```
 
 * BKtbl

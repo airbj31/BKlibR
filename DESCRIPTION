@@ -1,12 +1,12 @@
 Package: BKlibR
 Type: Package
 Title: BKlibR : BJK's private Library collection
-Version: 0.0.1
+Version: 0.0.0
 Authors@R: person("byungju","Kim", email="bjk@inu.ac.kr",role=c("aut","cre"))
 Description: 1. private functions which used in data processing
     2. private functions to load and write data.
 License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007  <https://fsf.org/>
 Encoding: UTF-8
 LazyData: true
-Imports: tidyverse, shiny, shiny.fluent, shiny.react
+Imports: tidyverse, shiny, shiny.fluent, shiny.react, shiny.router
 RoxygenNote: 7.1.1
