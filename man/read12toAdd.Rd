@@ -18,7 +18,6 @@ Read plink 12 coding file (plink --recode 12 )into one-hot encoding or additive 
 }
 \examples{
 read12toAdd(ped,map)
-
 }
 \author{
 Byungju Kim (bjk@inu.ac.kr)

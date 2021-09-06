@@ -5,7 +5,7 @@
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param x version
 #' @param y subversion
-#' @param URL various ~~~~.
+#' @param URL URL to add.
 #' @import tidyverse
 #' @import shiny
 #' @examples

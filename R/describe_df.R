@@ -10,11 +10,12 @@
 #' @examples
 #' describe_df(billboard)
 #' @export
-describe_df <- function(x,desc,n_var=7,show_freq=F) {
-
+describe_df <- function(df,desc,n_var=7,show_freq=F) {
+  x <- df
   nColumn <- dim(x)[2]
   nRow    <- dim(x)[1]
-  K<-tibble(columns=colnames(x),col_type=sapply(x,class))
+  x[] <- lapply(x, function(x) {if (inherits(x, "POSIXt")) as.Date(x) else x}) ## change POSIXt to date class
+  K<-tibble(columns=colnames(x),col_type=unlist(sapply(x,class)))
   numidx<-K %>% mutate(index=row.names(K)) %>% dplyr::filter(col_type %in% c("numeric","integer","double")) %>% pull(index) %>% as.numeric()
   K2<-sapply(x,BKtbl)
   K3<-lapply(K2,length)
@@ -24,13 +25,13 @@ describe_df <- function(x,desc,n_var=7,show_freq=F) {
   K5<-lapply(K5, sum)
   if(isFALSE(show_freq)) {
   K<-K %>% mutate(n_uniq_Val=unlist(K3),nMISS=unlist(K4),nLogic=unlist(K5)) %>%
-    mutate(col_type=case_when(nLogic==nRow  ~ "logic",
-                              n_uniq_Val<=n_var      ~ "factor",
-                              TRUE          ~ col_type)) %>% select(-nLogic)
+    mutate(col_type=case_when(nLogic     == nRow       ~ "logic",
+                              n_uniq_Val <= n_var      ~ "factor",
+                              TRUE       ~ col_type)) %>% select(-nLogic)
   } else {
     K<-K %>% mutate(n_uniq_Val=unlist(K3),nMISS=unlist(K4),fMISS=unlist(K4)/nRow,nLogic=unlist(K5)) %>%
-      mutate(col_type=case_when(nLogic==nRow      ~ "logic",
-                                n_uniq_Val<=n_var ~ "factor",
+      mutate(col_type=case_when(nLogic     == nRow      ~ "logic",
+                                n_uniq_Val <= n_var     ~ "factor",
                                 TRUE              ~ col_type)) %>% select(-nLogic)
   }
 

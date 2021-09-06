@@ -1,6 +1,6 @@
-#` Interactive Exploratory data analysis on data.
+#' Interactive Exploratory data analysis on data.
 #'
-#' show df's missing ratio, number of variables and column types..
+#' Interactive Exploratory data analysis on data using daviz and data handler.
 #' @name daviz
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param data a data.frame or tibble object.
@@ -19,7 +19,7 @@ daviz <- function(meta,data, ...) {
   software   <- "DaViz"
   version    <- 0
   subversion <- 0
-  URL        <-
+  URL        <- "https://github.com/airbj31/BKlibR"
   AUTHOR     <- "Kim, Byungju Ph.D"
   title      <- "Daviz"
 

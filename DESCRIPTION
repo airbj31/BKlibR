@@ -8,5 +8,6 @@ Description: 1. private functions which used in data processing
 License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007  <https://fsf.org/>
 Encoding: UTF-8
 LazyData: true
+Depends: tidyverse, shiny, shiny.fluent, shiny.react, shiny.router
 Imports: tidyverse, shiny, shiny.fluent, shiny.react, shiny.router
 RoxygenNote: 7.1.1
