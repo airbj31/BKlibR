@@ -2,12 +2,12 @@
 % Please edit documentation in R/buildFooter.R
 \name{buildFooter}
 \alias{buildFooter}
-\title{show df's missing ratio, number of variables and column types..}
+\title{footer builder for DaViz App.}
 \usage{
 buildFooter(title = "Data Visualization App", version = 1, subversion = 1, URL)
 }
 \arguments{
-\item{URL}{various ~~~~.}
+\item{URL}{URL to add.}
 
 \item{x}{version}
 
@@ -17,7 +17,7 @@ buildFooter(title = "Data Visualization App", version = 1, subversion = 1, URL)
 show df's missing ratio, number of variables and column types..
 }
 \examples{
-describe_df(billboard)
+buildFooter(billboard)
 }
 \author{
 Byungju Kim (bjk@inu.ac.kr)

@@ -3,12 +3,11 @@ BKlibR
 
 Kim, Byungju PhD
 
-last update : July 21, 2021
+last update : August 19, 2021
 
 ## Introduction
 
 * This repository is maintained and developed by Byungju Kim for various data analysis purpose.
-
 
 * Package Dependencies
   - [tidyverse](https://github.com/tidyverse)
@@ -25,11 +24,7 @@ last update : July 21, 2021
 
 ### Library install/load
 
-* qlib : load multiple library quietly if the lib not exists, it tried to install that library from cran.
-
-*
-
-*
+* requst : load multiple library quietly if the library not exists, it tries to install the library from [CRAN](https://cran.r-project.org/)
 
 
 ### FILE I/O 

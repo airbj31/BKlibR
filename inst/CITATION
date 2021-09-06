@@ -2,7 +2,7 @@ citHeader("To cite BKlibR in publications use:")
 
 citEntry(entry = "Unkown",
   title        = "BJK's personal R library",
-  author       = personList(as.person("Byungju Kim"))
+  author       = personList(as.person("Byungju Kim")),
   journal      = "",
   year         = "",
   volume       = "",

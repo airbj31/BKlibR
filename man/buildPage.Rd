@@ -7,17 +7,17 @@
 buildPage(title, subtitle, contents)
 }
 \arguments{
-\item{x}{version}
+\item{title}{title of the page}
 
-\item{y}{subversion}
+\item{subtitle}{subtitle of the page}
 
-\item{URL}{various ~~~~.}
+\item{contents}{various html codes required to build page.}
 }
 \description{
-Page builder for Shiny App with Appsilon's Shiny fluent.
+shamlessly stolen from Appsilon's tutorial.
 }
 \examples{
-describe_df(billboard)
+buildPage()
 }
 \author{
 Byungju Kim (bjk@inu.ac.kr)

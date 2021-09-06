@@ -7,6 +7,7 @@
 #' @examples
 #' BKtbl(billboard)
 #' @export
+
 BKtbl <- function(x,...)
 {
   if(class(x)=="list") {return(table(unlist(x)))}

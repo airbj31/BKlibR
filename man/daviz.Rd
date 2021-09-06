@@ -2,7 +2,7 @@
 % Please edit documentation in R/daviz.R
 \name{daviz}
 \alias{daviz}
-\title{show df's missing ratio, number of variables and column types..}
+\title{Interactive Exploratory data analysis on data.}
 \usage{
 daviz(meta, data, ...)
 }
@@ -14,10 +14,10 @@ daviz(meta, data, ...)
 \item{...}{various ~~~~.}
 }
 \description{
-show df's missing ratio, number of variables and column types..
+Interactive Exploratory data analysis on data using daviz and data handler.
 }
 \examples{
-describe_df(billboard)
+daviz(mtcars,mtcars)
 }
 \author{
 Byungju Kim (bjk@inu.ac.kr)

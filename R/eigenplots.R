@@ -2,27 +2,19 @@
 #'
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param x vector, and list objects.
-#' @import
+#' @import plotly
 #' @examples
 #' BKtbl(billboard)
 #' @export
 plot_evec <- function(evec,axis,color,shape,colors,shapes) {
-
-
-
+  ## read axis var to determine 2d or 3d plot.
 }
-
-plot.eval <-function(x,PCs=nrow(x)) {
-
-
-}
-
-
-
 
 #' eigenvalue plot including % cumulative eigenvalue
-#' @
+#'
 #' @examples
+#' PCA<-prcomp(iris[,1:4])
+#' plot_eval(PCA$sdev^2,3)
 #' @export
 plot_eval <- function(eval,PCs) {
 
