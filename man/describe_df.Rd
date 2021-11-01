@@ -4,14 +4,14 @@
 \alias{describe_df}
 \title{show df's missing ratio, number of variables and column types..}
 \usage{
-describe_df(x, desc, n_var = 7, show_freq = F)
+describe_df(df, desc, n_var = 7, show_freq = F)
 }
 \arguments{
-\item{x}{a data.frame or tibble object.}
-
 \item{desc}{column description file (under-development)}
 
 \item{n_var}{choice of one-hot encoding or additive model.}
+
+\item{x}{a data.frame or tibble object.}
 }
 \description{
 show df's missing ratio, number of variables and column types..

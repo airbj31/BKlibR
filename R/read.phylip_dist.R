@@ -1,6 +1,6 @@
 #' read.dist: read Phylip style distance matrix as distance matrix in R
 #'
-#' @name read.dist
+#' @name read.phylip_dist
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param file a file name,
 #' @param rm.list list for sample exclusion.
@@ -9,7 +9,7 @@
 #' @examples
 #'  read.dist(matrix.tsv)
 
-read.phylip_dist <- function(file,rm.list=c())
+read.phylip_dist <- function(file,rm.list=c(),skip=1)
 {
   nskip=skip
   ncol<-as.numeric(readLines(file,n=1))
