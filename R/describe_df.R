@@ -17,7 +17,7 @@ describe_df <- function(df,desc,n_var=7,show_freq=F) {
   x[] <- lapply(x, function(x) {if (inherits(x, "POSIXt")) as.Date(x) else x}) ## change POSIXt to date class
   K<-tibble(columns=colnames(x),col_type=unlist(sapply(x,class)))
   numidx<-K %>% mutate(index=row.names(K)) %>% dplyr::filter(col_type %in% c("numeric","integer","double")) %>% pull(index) %>% as.numeric()
-  K2<-sapply(x,BKtbl)
+  K2<-lapply(x,BKtbl)
   K3<-lapply(K2,length)
   K4<-lapply(x,is.na)
   K4<-lapply(K4,sum)
