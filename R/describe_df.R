@@ -5,7 +5,7 @@
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param x a data.frame or tibble object.
 #' @param desc column description file (under-development)
-#' @param n_var choice of one-hot encoding or additive model.
+#' @param n_var number of values which used to distinguish factor or character.
 #' @import tidyverse
 #' @examples
 #' describe_df(billboard)
@@ -17,7 +17,8 @@ describe_df <- function(df,desc,n_var=7,show_freq=F) {
   x[] <- lapply(x, function(x) {if (inherits(x, "POSIXt")) as.Date(x) else x}) ## change POSIXt to date class
   K<-tibble(columns=colnames(x),col_type=unlist(sapply(x,class)))
   numidx<-K %>% mutate(index=row.names(K)) %>% dplyr::filter(col_type %in% c("numeric","integer","double")) %>% pull(index) %>% as.numeric()
-  K2<-lapply(x,BKtbl)
+                                
+  K2<-sapply(x,BKtbl)
   K3<-lapply(K2,length)
   K4<-lapply(x,is.na)
   K4<-lapply(K4,sum)
