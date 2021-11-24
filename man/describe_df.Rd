@@ -9,7 +9,7 @@ describe_df(df, desc, n_var = 7, show_freq = F)
 \arguments{
 \item{desc}{column description file (under-development)}
 
-\item{n_var}{choice of one-hot encoding or additive model.}
+\item{n_var}{number of values which used to distinguish factor or character.}
 
 \item{x}{a data.frame or tibble object.}
 }
