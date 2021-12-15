@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_eval.R
 \name{plot_eval}
 \alias{plot_eval}
-\title{eigenvalue plot including % cumulative eigenvalue}
+\title{functions for cumulative eigenvalue and eigenvalue plots}
 \usage{
 plot_eval(eval, PCs)
 }
@@ -12,7 +12,7 @@ plot_eval(eval, PCs)
 \item{PCs}{number of Principle components to draw chart}
 }
 \description{
-eigenvalue plot including % cumulative eigenvalue
+functions for cumulative eigenvalue and eigenvalue plots
 }
 \examples{
 PCA<-prcomp(iris[,1:4])
