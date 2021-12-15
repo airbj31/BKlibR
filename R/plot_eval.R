@@ -1,4 +1,4 @@
-#' eigenvalue plot including % cumulative eigenvalue
+#' functions for cumulative eigenvalue and eigenvalue plots
 #'
 #' @name plot_eval
 #' @author Byungju Kim (bjk@inu.ac.kr)
