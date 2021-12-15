@@ -1,6 +1,6 @@
 #' eigenvalue plot including % cumulative eigenvalue
 #'
-#' @name plote_eval
+#' @name plot_eval
 #' @author Byungju Kim (bjk@inu.ac.kr)
 #' @param eval vector of eigenvalues
 #' @param PCs number of Principle components to draw chart
