@@ -1,5 +1,9 @@
 #' eigenvalue plot including % cumulative eigenvalue
 #'
+#' @name plote_eval
+#' @author Byungju Kim (bjk@inu.ac.kr)
+#' @param eval vector of eigenvalues
+#' @param PCs number of Principle components to draw chart
 #' @examples
 #' PCA<-prcomp(iris[,1:4])
 #' plot_eval(PCA$sdev^2,3)
